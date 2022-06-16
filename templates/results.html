@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+
+{% block title %}
+Quadratic
+{% endblock %}
+
+{% block content_title %}
+
+{% endblock %}
+
+{% block content %}
+<center>
+    <table border="1" width="50%">
+        <tr>
+            <th style="background-color: green">A</th>
+            <th style="background-color: green">B</th>
+            <th style="background-color: green">C</th>
+            <th style="background-color: green">X1</th>
+            <th style="background-color: green">X2</th>
+        </tr>
+        {% for coefficient in coefficients %}
+        <tr>
+            <td>{{ coefficient.a }}</td>
+            <td>{{ coefficient.b }}</td>
+            <td>{{ coefficient.c }}</td>
+            <td>{{ coefficient.x1 }}</td>
+            <td>{{ coefficient.x2 }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</center>
+{% endblock %}
