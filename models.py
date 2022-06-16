@@ -1,10 +1,5 @@
-from sqlalchemy import MetaData, Table, Column, Integer, Float, String
-from sqlalchemy.ext.declarative import declarative_base
-from flask import request
+from sqlalchemy import Column, Integer, Float, String
 from app import db
-
-metadata = MetaData()
-Base = declarative_base()
 
 
 class Coefficient(db.Model):
